@@ -3,34 +3,35 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/ReflexEngine/Reflex?style=social)](https://github.com/ReflexEngine/Reflex)
 
-A high-performance, lightweight Lua runtime built in C that combines the simplicity of Lua with the power of LibUV for asynchronous I/O. ReflexEngine delivers exceptional scripting capabilities for applications requiring both speed and flexibility.
+A high-performance, lightweight Lua runtime built in C# that combines the simplicity of Lua with the power of LibUV for asynchronous I/O. ReflexEngine delivers exceptional scripting capabilities for applications requiring both speed and flexibility.
 
 ## 🚀 Features
 
-- **Blazing Fast Performance**: Optimized C core with LuaJIT support for near-native execution speeds
-- **Minimal Footprint**: Less than 50MB base installation with minimal dependencies
-- **Asynchronous Architecture**: Built on LibUV for non-blocking I/O operations and event-driven programming
-- **Dual Engine Support**: Use standard Lua for compatibility or LuaJIT for performance-critical applications
-- **Embeddable Design**: Easily integrate into existing C/C++ applications with a clean API
-- **Extensible Framework**: Add custom functionality through C modules or pure Lua libraries
-- **Cross-Platform Compatibility**: First-class support for Windows, macOS, and Linux
+- **Blazing Fast Performance**: Optimized C# core with JIT compilation for high-speed execution
+- **Minimal Footprint**: Efficient memory usage with .NET runtime optimizations
+- **Asynchronous Architecture**: Built on LibUV and .NET's async/await for non-blocking I/O operations
+- **Dual Engine Support**: Use standard Lua for compatibility or LuaJIT for performance-critical applications via native interop
+- **Embeddable Design**: Easily integrate into existing .NET applications with a clean API
+- **Extensible Framework**: Add custom functionality through C# modules or pure Lua libraries
+- **Cross-Platform Compatibility**: First-class support for Windows, macOS, and Linux using .NET Core
 
 ## 📋 Requirements
 
-- C99-compatible compiler (GCC 4.8+, Clang 3.4+, or MSVC 2015+)
-- Make (alternative build option)
+- .NET SDK 7.0+ (or latest LTS version)
 - Git (for source code management)
+- LibUV (for asynchronous I/O operations, included as a dependency)
 
 ## 🔧 Installation
 
 ### From Source
 
 ```sh
-# Clone the repository with submodules
-git clone --recursive https://github.com/ReflexEngine/Reflex.git
+# Clone the repository
+git clone https://github.com/ReflexEngine/Reflex.git
 cd Reflex
 
-make
+# Build the project
+dotnet build --configuration Release
 ```
 
 ## 🏁 Quick Start
